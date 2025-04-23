@@ -1,15 +1,15 @@
 # Air-Quality-Project
+
 This project demonstrates the creation of a data pipeline using Open Air Quality data from a public S3 bucket. The pipeline extracts, transforms, and visualizes data in near real-time, ensuring the dashboard reflects live updates as data evolves.
 - **OpenAQ S3 Archive Documentation**: [Learn more here](https://docs.openaq.org/aws/about)  
 
 ## Project Structure
 
-- **`notebooks/`**: Scratchpads for experimenting with ideas and testing technologies.
+- **`jupyter_notebooks/`**: Scratchpads for experimenting with ideas and testing technologies.
 - **`sql/`**: SQL scripts for data extraction and transformation, written in DuckDB’s query language.
 - **`pipeline/`**: CLI applications for executing extraction, transformation, and database management tasks.
 - **`dashboard/`**: Plotly Dash code for creating the live air quality dashboard.
 - **`locations.json`**: Configuration file containing air quality sensor locations.
-- **`secrets-example.json`**: Example configuration for OpenAQ API keys (**Note:** Do not commit actual secrets to version control).
 - **`requirements.txt`**: List of Python libraries and dependencies.
 
 ---
@@ -28,9 +28,7 @@ The DuckDB database includes the following schemas and tables:
 
 ---
 
-## Running the Project
-
-Follow these steps to set up and run the project:
+## How to run the Project
 
 1. **Set Up Python Environment**:
    - Create a virtual environment:
@@ -39,7 +37,7 @@ Follow these steps to set up and run the project:
      ```
    - Activate the environment:
      - **Windows**: `$ . .venv/Scripts/activate`
-     - **Linux/Mac**: `$ . .venv/bin/activate`
+   
    - Install dependencies:
      ```bash
      $ pip install -r requirements.txt
