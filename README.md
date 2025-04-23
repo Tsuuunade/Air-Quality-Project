@@ -10,7 +10,7 @@ This project demonstrates the creation of a data pipeline using Open Air Quality
 - **`pipeline/`**: CLI applications for executing extraction, transformation, and database management tasks.
 - **`dashboard/`**: Plotly Dash code for creating the live air quality dashboard.
 - **`locations.json`**: Configuration file containing air quality sensor locations.
-- **`requirements.txt`**: List of Python libraries and dependencies.
+- **`requirements.txt`**: List of Python libraries needed.
 
 ---
 
@@ -38,16 +38,12 @@ The DuckDB database includes the following schemas and tables:
    - Activate the environment:
      - **Windows**: `$ . .venv/Scripts/activate`
    
-   - Install dependencies:
+   - Install libraries:
      ```bash
      $ pip install -r requirements.txt
      ```
 
 2. **Initialize the Database**:
-   - Navigate to the `pipeline` directory:
-     ```bash
-     $ cd pipeline
-     ```
    - Run the database manager CLI to create the database:
      ```bash
      $ python database_manager.py --create
@@ -66,10 +62,6 @@ The DuckDB database includes the following schemas and tables:
      ```
 
 5. **Set Up the Dashboard**:
-   - Navigate to the `dashboard` directory:
-     ```bash
-     $ cd dashboard
-     ```
    - Start the dashboard application:
      ```bash
      $ python app.py
@@ -77,6 +69,6 @@ The DuckDB database includes the following schemas and tables:
 
 6. **Access the Results**:
    - The database will be stored as a `.db` file.
-   - The dashboard will be accessible in your web browser.
+   - The dashboard will be accessible in the web browser.
 
 ---
